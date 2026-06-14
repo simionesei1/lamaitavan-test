@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
   <header class="site-header">
@@ -135,22 +136,41 @@
           <h2 id="contact-title">Să planificăm împreună.</h2>
           <p>Completează formularul și se va deschide WhatsApp cu mesajul pregătit. Îl poți trimite direct pentru a verifica disponibilitatea datei.</p>
           <div class="contact-links">
-            <a href="https://wa.me/40751901132" target="_blank" rel="noopener">WhatsApp: +40 751 901 132</a>
-            <a href="https://instagram.com/lamaitavan" target="_blank" rel="noopener">Instagram: @lamaitavan</a>
-            <a href="https://tiktok.com/@lamaitavan" target="_blank" rel="noopener">TikTok: @lamaitavan</a>
-            <a href="#">Facebook: Lămâița Van</a>
+            <a href="https://wa.me/40751901132" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i>
+              WhatsApp: +40 751 901 132
+            </a>
+
+            <a href="https://instagram.com/lamaitavan" target="_blank" rel="noopener">
+              <i class="fa-brands fa-instagram"></i>
+              Instagram: @lamaitavan
+            </a>
+
+            <a href="https://tiktok.com/@lamaitavan" target="_blank" rel="noopener">
+              <i class="fa-brands fa-tiktok"></i>
+              TikTok: @lamaitavan
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+              Facebook: Lămâița Van
+            </a>
           </div>
         </div>
+
         <form class="booking-form" id="bookingForm">
           <label>Nume complet
             <input name="nume" type="text" autocomplete="name" required placeholder="Ex: Andrei Popescu" />
           </label>
+
           <label>Telefon
             <input name="telefon" type="tel" autocomplete="tel" required placeholder="Ex: 07xx xxx xxx" />
           </label>
+
           <label>Email
             <input name="email" type="email" autocomplete="email" placeholder="Ex: nume@mail.com" />
           </label>
+
           <label>Tip eveniment
             <select name="eveniment" required>
               <option value="" selected disabled>Selectează tipul</option>
@@ -163,18 +183,23 @@
               <option>Petrecere privată</option>
             </select>
           </label>
+
           <label>Data evenimentului
             <input name="data" type="date" required />
           </label>
+
           <label>Localitate
             <input name="localitate" type="text" required placeholder="Ex: Suceava" />
           </label>
+
           <label class="full">Număr aproximativ de invitați
             <input name="invitati" type="number" min="1" placeholder="Ex: 100" />
           </label>
+
           <label class="full">Mesaj suplimentar
             <textarea name="mesaj" rows="4" placeholder="Spune-ne câteva detalii despre eveniment..."></textarea>
           </label>
+
           <button class="btn btn-primary full" type="submit">Trimite pe WhatsApp</button>
         </form>
       </div>
@@ -186,5 +211,7 @@
   </footer>
 
   <script src="assets/script.js"></script>
+</body>
+</html>
 </body>
 </html>
