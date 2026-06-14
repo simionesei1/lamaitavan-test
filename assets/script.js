@@ -23,7 +23,7 @@ if (slider) {
   setInterval(() => {
     index = index === slides.length - 1 ? 0 : index + 1;
     update();
-  }, 5500);
+  }, 3000);
 }
 
 const form = document.getElementById('bookingForm');
